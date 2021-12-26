@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  color: #a0a0a0;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  background-color: #212121;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  margin: 0 0.4rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+#nav-box{
+  background-color: #383838;
+  padding: 0.8rem;
+  border-radius: 13px;
+  display: flex;
+
+}
+
+footer{
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+}
