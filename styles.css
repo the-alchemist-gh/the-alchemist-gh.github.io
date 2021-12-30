@@ -6,32 +6,47 @@ body {
 
 .btn {
   background-color: #212121;
-  width: 60px;
-  height: 60px;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 13px;
-  margin: 0 0.4rem;
+  border-radius: 0.8rem;
+  margin: 0 0.3rem;
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-#nav-box{
+.divider {
+  width: 0px;
+  height: 35px;
+  color: #ee0000;
+  border: 1px solid #212121;
+  margin: 0 0.5rem;
+}
+
+#nav-box {
   background-color: #383838;
-  padding: 0.8rem;
-  border-radius: 13px;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
   display: flex;
-
+  align-items: center;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 1rem;
   display: flex;
   left: 50%;
   transform: translate(-50%);
+}
+
+#bg-img {
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
 }
