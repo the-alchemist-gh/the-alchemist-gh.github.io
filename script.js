@@ -1,9 +1,9 @@
 let userName = document.getElementById('visitor-name');
-// let getUserName = prompt('Wozop, Kindly enter your name');
+let getUserName = prompt('Wozop, Kindly enter your name');
 buttonClicked = document.querySelectorAll(".btn");
 
 
-// userName.innerHTML = getUserName;
+userName.innerHTML = getUserName;
 buttonClicked.forEach(btnClick => btnClick.addEventListener('click', ()=>{
     // console.log(e)
     const audio = document.querySelector('audio')

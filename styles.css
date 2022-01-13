@@ -4,6 +4,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
   background-color: #212121;
   width: 3rem;
