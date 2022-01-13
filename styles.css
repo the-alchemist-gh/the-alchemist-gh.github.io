@@ -65,3 +65,9 @@ footer {
   bottom: 0;
   right: 0;
 }
+
+.coreAim {
+  font-size: large;
+  font-weight: bolder;
+  color: #f2f2f2;
+}
