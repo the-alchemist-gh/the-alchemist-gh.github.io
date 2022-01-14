@@ -1,6 +1,5 @@
 body {
-  background-color: black;
-  color: #a0a0a0;
+  color: #757575;
   font-family: "Roboto", sans-serif;
 }
 
@@ -11,7 +10,7 @@ main {
 }
 
 .btn {
-  background-color: #212121;
+  background-color: #e8e8e8;
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -39,17 +38,19 @@ main {
   width: 0px;
   height: 35px;
   color: #ee0000;
-  border: 1px solid #212121;
+  border: 1px solid #e8e8e8;
   margin: 0 0.5rem;
 }
 
 #nav-box {
-  background-color: #383838;
+  background-color: #ffffff;
   padding: 0.6rem;
   border-radius: 0.8rem;
   display: flex;
   align-items: center;
   height: 45px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 footer {
@@ -70,24 +71,23 @@ footer {
 .coreAim {
   font-size: large;
   font-weight: bolder;
-  color: #f2f2f2;
+  color: #252525;
 }
 
 .favs {
 }
 
 .fav-btn {
-  font-weight: bold;
+  font-weight: 500;
   padding: 0.5rem 1rem;
-  border: #a0a0a0 1px solid;
   border-radius: 20px;
   margin: 1rem 1rem 0 0;
-  background-color: #3a3a3a;
+  background-color: #e8e8e8;
   color: #a0a0a0;
   text-decoration: none;
 }
 
 .fav-btn:hover {
-  background-color: #8a8a8a;
+  background-color: #333333;
   color: #f2f2f2;
 }
