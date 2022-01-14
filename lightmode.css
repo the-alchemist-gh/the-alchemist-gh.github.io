@@ -75,6 +75,7 @@ footer {
 }
 
 .favs {
+  margin-bottom: 2rem;
 }
 
 .fav-btn {
@@ -89,5 +90,13 @@ footer {
 
 .fav-btn:hover {
   background-color: #333333;
+  color: #f2f2f2;
+}
+
+#fav-desc {
+  display: none;
+  background-color: #383838;
+  margin: 1rem 0;
+  padding: 2rem;
   color: #f2f2f2;
 }

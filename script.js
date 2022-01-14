@@ -1,7 +1,9 @@
 let userName = document.getElementById('visitor-name');
 let getUserName = prompt('Wozop, Kindly enter your name');
 buttonClicked = document.querySelectorAll(".btn");
-
+favBtn = document.querySelectorAll('.fav-btn');
+favDesc = document.querySelector('#fav-desc');
+favDescText = document.createElement('h4');
 
 userName.innerHTML = getUserName;
 
@@ -35,3 +37,26 @@ buttonClicked.forEach(btnClick => btnClick.addEventListener('click', ()=>{
 //     // console.log(audio);
 //   });
 // }
+
+favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
+    'click', ()=>{
+
+        if(favBtnClicked.id === 'quoteBtn'){
+            favDescText.textContent = 'When you want something, all the Universe conspires in helping you to achieve it.';
+            favDesc.style.display = 'block'
+            favDesc.appendChild(favDescText);
+            favBtnClicked.classList.add('active-fav-btn');
+        } else if(favBtnClicked.id === 'bookBtn'){
+            // if(favBtn.classList.contain('active-fav-btn')){
+            //     favBtn.classList.remove('active-fav-btn');
+            // };
+            favDescText.textContent = 'The Alchemist, Who moved my Cheese';
+            favDesc.style.display = 'block'
+            favDesc.appendChild(favDescText);
+            favBtnClicked.classList.add('active-fav-btn');
+            favBtn.classList.remove('active-fav-btn');
+
+
+        }
+    }
+));
