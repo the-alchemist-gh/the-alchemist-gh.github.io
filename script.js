@@ -54,9 +54,21 @@ favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
             favDesc.style.display = 'block'
             favDesc.appendChild(favDescText);
             favBtnClicked.classList.add('active-fav-btn');
-            favBtn.classList.remove('active-fav-btn');
 
+        } else if(favBtnClicked.id === 'movieBtn'){
 
-        }
+            favDescText.textContent = '3 Idiots, InTime';
+            favDesc.style.display = 'block'
+            favDesc.appendChild(favDescText);
+            favBtnClicked.classList.add('active-fav-btn');
+
+        } 
+        // else if(favBtnClicked.id === 'peopleBtn'){
+            
+        //     favDescText.textContent = 'Samira';
+        //     favDesc.style.display = 'block'
+        //     favDesc.appendChild(favDescText);
+        //     favBtnClicked.classList.add('active-fav-btn');
+        // }
     }
 ));

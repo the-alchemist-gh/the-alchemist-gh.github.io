@@ -62,7 +62,7 @@ footer {
 
 #bg-img {
   position: fixed;
-  z-index: 0;
+  z-index: -999;
   bottom: 0;
   right: 0;
 }
