@@ -101,3 +101,40 @@ footer {
   padding: 2rem;
   color: #252525;
 }
+
+@media only screen and (max-width: 500px) {
+  #nav-box {
+    padding: 0.4rem;
+    height: 45px;
+    width: 95%;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .fav-btn {
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border: #a0a0a0 0.7px solid;
+    border-radius: 5px;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+
+  #bg-img {
+    width: 50%;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .btn {
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0.2rem;
+  }
+}

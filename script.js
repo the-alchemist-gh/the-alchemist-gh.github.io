@@ -41,6 +41,12 @@ buttonClicked.forEach(btnClick => btnClick.addEventListener('click', ()=>{
 favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
     'click', ()=>{
 
+        for(let i=0; i<favBtn.length; i++){
+            favBtn[i].classList.remove('active-fav-btn');
+        }
+        // favBtnClicked.classList.remove('active-fav-btn');
+
+
         if(favBtnClicked.id === 'quoteBtn'){
             favDescText.textContent = 'When you want something, all the Universe conspires in helping you to achieve it.';
             favDesc.style.display = 'block'
