@@ -1,5 +1,5 @@
 let userName = document.getElementById('visitor-name');
-let getUserName = prompt('Wozop, Kindly enter your name');
+// let getUserName = prompt('Wozop, Kindly enter your name');
 buttonClicked = document.querySelectorAll(".btn");
 favBtn = document.querySelectorAll('.fav-btn');
 favDesc = document.querySelector('#fav-desc');
