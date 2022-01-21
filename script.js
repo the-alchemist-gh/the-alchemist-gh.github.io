@@ -1,5 +1,5 @@
 let userName = document.getElementById('visitor-name');
-let getUserName = prompt('Wozop, Kindly enter your name');
+// let getUserName = prompt('Wozop, Kindly enter your name');
 buttonClicked = document.querySelectorAll(".btn");
 favBtn = document.querySelectorAll('.fav-btn');
 favDesc = document.querySelector('#fav-desc');
@@ -24,7 +24,7 @@ buttonClicked.forEach(btnClick => btnClick.addEventListener('click', ()=>{
     } else if(btnClick.id === 'lightMode') {
         document.querySelector("link[href='lightmode.css']").href = 'styles.css';
         btnClick.id = 'darkMode';
-        document.getElementById('bg-img').src = 'https://res.cloudinary.com/malikbanks/image/upload/v1640548289/Website/bg-hero.svg'
+        document.getElementById('bg-img').src = 'https://res.cloudinary.com/malikbanks/image/upload/v1642717595/Website/herobg-removebg-preview.png'
     }
 }));
 // for (let i=0; i<buttonClicked.length; i++){
