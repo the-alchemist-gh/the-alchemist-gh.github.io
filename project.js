@@ -1,5 +1,4 @@
 let userName = document.getElementById('visitor-name');
-let getUserName = prompt('Wozop, Kindly enter your name');
 buttonClicked = document.querySelectorAll(".btn");
 favBtn = document.querySelectorAll('.fav-btn');
 favDesc = document.querySelector('#fav-desc');
@@ -7,7 +6,6 @@ favDescText = document.createElement('h4');
 
 projectMenu = document.querySelectorAll('.project-menu-item');
 
-userName.innerHTML = getUserName;
 
 // Play Sound
 buttonClicked.forEach(btnClick => btnClick.addEventListener('click', ()=>{
@@ -84,10 +82,27 @@ favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
 // Project Menu Click
 projectMenu.forEach(projectMenuClicked => projectMenuClicked.addEventListener(
     'click', ()=>{
-        alert('herllo');
-        // let projectItem = document.querySelectorAll('.project');
-        // for(let i=0; i<projectItem.length; i++){
-        //     if(projectMenuClicked.id === custo)
-        // }
+        
+        let projectItem = document.querySelectorAll('.project');
+        for(let i=0; i<projectItem.length; i++){
+          projectItem[i].classList.remove('hide');
+
+            if(projectMenuClicked.id === 'custom-built'){
+              if(projectItem[i].classList.contains('custom-built')=== false){
+                projectItem[i].classList.add('hide');
+              }
+            }
+            if(projectMenuClicked.id === 'design-project'){
+              if(projectItem[i].classList.contains('design-project')=== false){
+                projectItem[i].classList.add('hide');
+              }
+            }
+            if(projectMenuClicked.id === 'wordpress-project'){
+              if(projectItem[i].classList.contains('wordpress-project')=== false){
+                projectItem[i].classList.add('hide');
+              }
+            }
+            
+        }
     }
 ));
