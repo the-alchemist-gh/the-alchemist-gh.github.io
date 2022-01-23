@@ -1,10 +1,10 @@
 let userName = document.getElementById('visitor-name');
-buttonClicked = document.querySelectorAll(".btn");
-favBtn = document.querySelectorAll('.fav-btn');
-favDesc = document.querySelector('#fav-desc');
-favDescText = document.createElement('h4');
+let buttonClicked = document.querySelectorAll(".btn");
+let favBtn = document.querySelectorAll('.fav-btn');
+let favDesc = document.querySelector('#fav-desc');
+let favDescText = document.createElement('h4');
 
-projectMenu = document.querySelectorAll('.project-menu-item');
+let projectMenu = document.querySelectorAll('.project-menu-item');
 
 
 // Play Sound
@@ -48,7 +48,7 @@ favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
 
 
         if(favBtnClicked.id === 'quoteBtn'){
-            favDescText.textContent = 'When you want something, all the Universe conspires in helping you to achieve it.';
+            favDescText.innerText = 'When you want something, all the Universe conspires in helping you to achieve it.';
             favDesc.style.display = 'block'
             favDesc.appendChild(favDescText);
             favBtnClicked.classList.add('active-fav-btn');
@@ -56,14 +56,14 @@ favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
             // if(favBtn.classList.contain('active-fav-btn')){
             //     favBtn.classList.remove('active-fav-btn');
             // };
-            favDescText.textContent = 'The Alchemist, Who moved my Cheese';
+            favDescText.innerText = 'The Alchemist, Who moved my Cheese';
             favDesc.style.display = 'block'
             favDesc.appendChild(favDescText);
             favBtnClicked.classList.add('active-fav-btn');
 
         } else if(favBtnClicked.id === 'movieBtn'){
 
-            favDescText.textContent = '3 Idiots, InTime';
+            favDescText.innerText = '3 Idiots, InTime';
             favDesc.style.display = 'block'
             favDesc.appendChild(favDescText);
             favBtnClicked.classList.add('active-fav-btn');
@@ -79,10 +79,12 @@ favBtn.forEach(favBtnClicked => favBtnClicked.addEventListener(
     }
 ));
 
+
 // Project Menu Click
 projectMenu.forEach(projectMenuClicked => projectMenuClicked.addEventListener(
     'click', ()=>{
-        
+
+      console.log('jh')
         let projectItem = document.querySelectorAll('.project');
         for(let i=0; i<projectItem.length; i++){
           projectItem[i].classList.remove('hide');
