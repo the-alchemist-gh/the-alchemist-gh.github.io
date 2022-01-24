@@ -145,6 +145,8 @@ footer {
   align-items: end;
   border-radius: 10px;
   margin: 10px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .project-bg:hover {
@@ -156,7 +158,11 @@ footer {
   width: 100%;
   border-radius: 10px;
   padding: 0px 8px 8px 8px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.89)
+  );
 }
 
 .project-bg > div {
@@ -181,8 +187,26 @@ footer {
 
 #ipay {
   background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642858707/Website/portfolio/ipayimage.jpg);
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+}
+
+#atfg {
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985604/Website/portfolio/atfg.jpg);
+}
+
+#dgstore {
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985620/Website/portfolio/dgstore.jpg);
+}
+
+#bgglobal {
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985611/Website/portfolio/bgglobal.jpg);
+}
+
+#heromarket {
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985644/Website/portfolio/heromarket.jpg);
+}
+
+#sfIpay {
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985680/Website/portfolio/salesforce.jpg);
 }
 
 @media only screen and(min-width:700px) {
