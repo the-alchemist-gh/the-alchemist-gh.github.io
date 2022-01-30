@@ -209,6 +209,10 @@ footer {
   background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1642985680/Website/portfolio/salesforce.jpg);
 }
 
+#psyche{
+  background-image: url(https://res.cloudinary.com/malikbanks/image/upload/v1552044967/boy.jpg);
+}
+
 @media only screen and(min-width:700px) {
   .project-bg {
     display: none;
